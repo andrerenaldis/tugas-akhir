@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "ede320d6-2885-4c05-ad0f-24b010957536",
+		"name": "Tugas_Akhir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25756775"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\": \"andre\",\r\n    \"email\": \"ar@gmail.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?{{token}}=Bearer 3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "{{token}}",
+							"value": "Bearer 3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/741595{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"741595{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 741595,\r\n    \"name\": \"andre sihombing\",\r\n    \"email\": \"arsih@gmail.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/741595{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"741595{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/388{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"388{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"user_id\": 741595,\r\n  \"user\": \"andre\",\r\n  \"title\": \"Cunabula officiis rem advoco fugiat sublime toties dedecor aurum.\",\r\n  \"body\": \"Stultus umerus nemo. Inflammatio demulceo molestias. Decimus doloremque conor. Accedo usitas vestrum. Aro venia voluptas. Tam adversus virga. Curso videlicet cicuta. Defungo a vito. Harum in amplus. Illum bestia volaticus. Civitas in defendo. Contra celebrer ut. Adulescens id id. Corrumpo colligo tricesimus. Placeat in cotidie. Uxor quae verbum. Aro cibus acervus. Ulterius spoliatio pecto. Temeritas excepturi blandior. Tantum ventosus cum. Tremo vulgaris tum.\",\r\n  \"email\": \"arsih@gmail.com\",\r\n  \"name\": \"andre\",\r\n  \"gender\": \"male\",\r\n  \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/741595/posts{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"741595",
+						"posts{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"user_id\": 741595,\r\n\"user\": \"andre\",\r\n\"body\":\"Eum excepturi dolorem. Nihil excepturi sint.\",\r\n\"email\": \"arsih@gmail.com\",\r\n\"name\": \"andre\",\r\n\"gender\": \"male\",\r\n\"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts/388/comments{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts",
+						"388",
+						"comments{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Todos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"user_id\": 741595,\r\n\"user\": \"andre\",\r\n\"title\":\"Cura quia amoveo tot ullus arceo earum suus quas defigo deludo.\",\r\n\"due_on\":\"2023-04-17T00:00:00.000+05:30\",\r\n\"status\":\"pending\"\r\n\"email\": \"arsih@gmail.com\",\r\n\"name\": \"andre\",\r\n\"gender\": \"male\",\r\n\"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts/388/todos{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts",
+						"388",
+						"todos{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail Post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/741595/posts{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"741595",
+						"posts{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail Comments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/posts/388/comments{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"posts",
+						"388",
+						"comments{{token}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Detail Todos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3a91d158b5bfa03ff599070603181db963dd5a71e0346f7d64fb33d1fc074b23",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/388/todos{{token}}",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"388",
+						"todos{{token}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
